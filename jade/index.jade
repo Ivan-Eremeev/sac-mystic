@@ -1,0 +1,109 @@
+extends blocks/base.jade
+
+block title 
+	title Главная
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		.bg
+
+			.wrapper
+				
+				// welcome
+				.welcome
+					.welcome_row
+						.welcome_content
+							img(src="img/offer.png", alt="")
+				// /welcome
+						
+				// steps
+				.steps
+					.steps_col
+						a(href="#").steps_item
+							.steps_num 1
+							.steps_content
+								.steps_title Register:
+								.steps_text Quick and easy signup
+					.steps_col
+						a(href="#").steps_item
+							.steps_num 2
+							.steps_content
+								.steps_title Get your bonus:
+								.steps_text Make your 1st deposit &amp; claim
+					.steps_col
+						a(href="#").steps_item
+							.steps_num 3
+							.steps_content
+								.steps_title Have fun AND
+								.steps_text Let the rewards start rolling in!
+					// /steps
+
+		// platforms
+		.platforms
+			.wrapper
+				.platforms_icon
+					img(src="img/platform-icon1.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon2.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon3.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon4.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon5.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon6.png", alt="platform")
+				.platforms_icon
+					img(src="img/platform-icon7.png", alt="platform")
+		//	/platforms
+
+		// partners
+		.partners
+			.wrapper
+				.partners_icon
+					img(src="img/partner-icon1.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon2.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon3.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon4.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon5.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon6.png", alt="partner")
+				.partners_icon
+					img(src="img/partner-icon7.png", alt="partner")
+		//	/partners
+
+		include blocks/footer.jade
+
+block js-libs
+	//- script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

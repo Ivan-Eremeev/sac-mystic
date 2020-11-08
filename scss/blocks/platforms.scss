@@ -1,0 +1,33 @@
+.platforms {
+  background-color: #e8e8e8;
+  padding: 7px 0;
+  .wrapper {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &_icon {
+    padding: 10px;
+    img {
+      display: block;
+    }
+  }
+  @media (max-width: $break-md) {
+    padding: 2px 0;
+    .wrapper {
+      max-width: 550px;
+    }
+    &_icon {
+      img {
+        height: 23px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    .wrapper {
+      justify-content: center;
+    }
+  }
+}

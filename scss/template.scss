@@ -1,0 +1,125 @@
+// settings
+html {
+	height: 100%;
+	&.lock {
+		overflow: hidden;
+	}
+}
+a {
+	transition: .1s;
+	text-decoration: none;
+}
+button {
+	font-family: "Roboto";
+	outline: none;
+}
+input {
+	font-family: "Roboto";
+	outline: none;
+}
+.row {
+	@include row-flex();
+}
+.wrapper {
+	@include wrapper();
+}
+body {
+	height: 100%;
+	background-color: #fff;
+	font-family: "Roboto";
+	font-size: 41px;
+}
+.mobile-hide {
+	@media (max-width: $break_sm) {
+		display: none !important;
+	}
+}
+.mobile-visible {
+	@media (min-width: $break_sm + 1) {
+		display: none !important;
+	}
+}
+.img-responsive {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		padding-top: 56.25%;
+	}
+}
+// /settings
+
+.wrapper {
+	@include wrapper();
+}
+.row {
+	@include row-flex();
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	padding: 12px 0 0;
+	position: absolute;
+	@media (max-width: $break_xl) {
+		padding: 20px 0 20px;
+	}
+	@media (max-width: $break_sm) {
+		padding: 10px 0;
+	}
+}
+.logo {
+	display: inline-block;
+}
+.bg {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	background-image: url(../img/bg.jpg);
+	background-color: #112a55;
+	background-size: cover;
+	>.wrapper {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 15px;
+		background-image: url(../img/image-1920.png);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+	@media (max-width: $break_xl) {
+		>.wrapper {
+			background-position: right -100px top;
+			background-size: 90% auto;
+		}
+	}
+	@media (max-width: $break_md) {
+		>.wrapper {
+			background-position: right -100px center;
+		}
+	}
+	@media (max-width: $break_sm) {
+		background-image: url(../img/bg-sm.jpg);
+		>.wrapper {
+			background-image: url(../img/image-sm.png);
+			background-position: center top 412px;
+			background-size: 520px auto;
+		}
+	}
+	@media (max-width: $break_xs) {
+		>.wrapper {
+		}
+	}
+}

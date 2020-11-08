@@ -1,0 +1,25 @@
+.partners {
+  padding: 12px 0;
+  background-color: #000000;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &_icon {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    margin: 10px 0;
+  }
+  @media (max-width: $break_md) {
+    padding: 16px 0;
+    &_icon {
+      padding: 0 10px;
+      img {
+        height: 15px;
+      }
+    }
+  }
+}
