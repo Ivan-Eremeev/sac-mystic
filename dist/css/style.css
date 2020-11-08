@@ -484,7 +484,8 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 	width: 33.3%;
-	padding: 30px 10px 30px 46px;
+	min-height: 124px;
+	padding: 10px 10px 10px 46px;
 	font-family: "AlegreyaSC";
 	font-weight: bold;
 	color: #fff;
@@ -537,6 +538,21 @@ body {
 .steps_text {
 	font-size: 25px;
 	font-style: italic;
+}
+@media (max-width: 1400px) {
+	.steps_item {
+		min-height: 70px;
+	}
+	.steps_num {
+		font-size: 70px;
+		margin-top: -10px;
+	}
+	.steps_title {
+		font-size: 23px;
+	}
+	.steps_text {
+		font-size: 18px;
+	}
 }
 @media (max-width: 769px) {
 	.steps {
