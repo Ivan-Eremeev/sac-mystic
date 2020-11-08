@@ -26,31 +26,40 @@ block content
 				// welcome
 				.welcome
 					.welcome_row
-						.welcome_content
+						a(href="#").welcome_content
 							img(src="img/offer.png", alt="")
 				// /welcome
 						
 				// steps
 				.steps
-					.steps_col
-						a(href="#").steps_item
-							.steps_num 1
-							.steps_content
-								.steps_title Register:
-								.steps_text Quick and easy signup
-					.steps_col
-						a(href="#").steps_item
-							.steps_num 2
-							.steps_content
-								.steps_title Get your bonus:
-								.steps_text Make your 1st deposit &amp; claim
-					.steps_col
-						a(href="#").steps_item
-							.steps_num 3
-							.steps_content
-								.steps_title Have fun AND
-								.steps_text Let the rewards start rolling in!
-					// /steps
+					a(href="#").steps_item.steps_item--1
+						.steps_num 1
+						.steps_content
+							.steps_title Register
+							.steps_text Quick and easy signup
+							.steps_triangle.steps_triangle--prev
+								img(src="img/triangle1.svg", alt="")
+							.steps_triangle.steps_triangle--next
+								img(src="img/triangle1.svg", alt="")
+					a(href="#").steps_item.steps_item--2
+						.steps_num 2
+						.steps_content
+							.steps_title Get your bonus 
+							.steps_text Make your 1st deposit and claim
+							.steps_triangle.steps_triangle--prev
+								img(src="img/triangle2.svg", alt="")
+							.steps_triangle.steps_triangle--next
+								img(src="img/triangle2.svg", alt="")
+					a(href="#").steps_item.steps_item--3
+						.steps_num 3
+						.steps_content
+							.steps_title Have fun
+							.steps_text Let the rewards start rolling in!
+							.steps_triangle.steps_triangle--prev
+								img(src="img/triangle3.svg", alt="")
+							.steps_triangle.steps_triangle--next
+								img(src="img/triangle3.svg", alt="")
+				//	/steps
 
 		// platforms
 		.platforms
