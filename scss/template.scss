@@ -24,6 +24,7 @@ input {
 	@include wrapper();
 }
 body {
+	min-width: 319px;
 	height: 100%;
 	background-color: #fff;
 	font-family: "Roboto";
@@ -79,6 +80,7 @@ body {
 	}
 	@media (max-width: $break_sm) {
 		padding: 10px 0;
+		text-align: center;
 	}
 }
 .logo {
@@ -91,31 +93,24 @@ body {
 	background-image: url(../img/bg.jpg);
 	background-color: #112a55;
 	background-size: cover;
+	overflow: hidden;
+	background-position: top center;
 	>.wrapper {
 		width: 100%;
 		height: 100%;
-		padding-bottom: 15px;
-		background-image: url(../img/image-1920.png);
-		background-repeat: no-repeat;
-		background-position: right top;
 	}
 	@media (max-width: $break_xl) {
 		>.wrapper {
-			background-position: right -100px top;
-			background-size: 90% auto;
 		}
 	}
 	@media (max-width: $break_md) {
 		>.wrapper {
-			background-position: right -100px center;
 		}
 	}
 	@media (max-width: $break_sm) {
-		background-image: url(../img/bg-sm.jpg);
+		background-image: none;
+		background-color: #000;
 		>.wrapper {
-			// background-image: url(../img/image-sm.png);
-			background-position: center top 412px;
-			background-size: 520px auto;
 		}
 	}
 	@media (max-width: $break_xs) {

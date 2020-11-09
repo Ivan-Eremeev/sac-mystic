@@ -1,106 +1,48 @@
 .welcome {
   padding-top: 140px;
+  position: relative;
 	&_row {
 		display: flex;
 		justify-content: space-between;
 	}
 	&_content {
     text-transform: uppercase;
-    margin-bottom: 15px;
-    letter-spacing: 0;
-	}
-	&_title {
-    display: block;
-    font-family: "AlegreyaSC";
-    font-weight: bold;
-    text-shadow: 2px 2px #fff,
-    2px -2px #fff,
-    -2px 2px #fff,
-    -2px -2px #fff;
-    color: #c6e5ff;
-		line-height: 0.9;
+    padding-top: 20px;
     margin-bottom: 5px;
+    margin-left: -40px;
+    letter-spacing: 0;
     position: relative;
-	}
-	&_title-big {
-    font-size: 158px;
-    letter-spacing: -5px;
-    margin-right: 10px;
-	}
-	&_title-top {
-    font-size: 66px;
-	}
-	&_title-text-a {
-    display: block;
-    font-size: 66px;
-  }
-  &_title-text-b {
-    display: block;
-    font-size: 158px;
-  }
-	&_text {
-    display: block;
-    font-family: "AlegreyaSC";
-		font-size: 66px;
-		color: #fff;
-    font-weight: bold;
-		margin-bottom: 15px;
-  }
-  &_text-plus {
-    font-size: 77px;
-    line-height: 0.5;
-  }
-	&_btn {
-    display: inline-block;
-    padding: 17px 30px;
-    background-color: #de0b5e;
-    border: 2px solid transparent;
-		border-radius: 5px;
-		font-size: 62px;
-		font-weight: bold;
-		color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    transition: .3s;
-    &:hover {
-      border-color: #deeaff;
-      box-shadow: 0 0 9px 1px #de0b5e,
-      inset 0 0 8px 2px rgba(222, 11, 94, 0.94);
+    z-index: 2;
+    img {
+      display: block;
     }
-	}
+  }
+  &_wolf {
+    position: absolute;
+    bottom: -100px;
+    right: -285px;
+    z-index: 1;
+  }
   @media (max-width: $break_xl) {
     &_row {
 
     }
     &_content {
-      max-width: 340px;
+      max-width: 450px;
       margin-bottom: 30px;
     }
-    &_title {
-      margin-bottom: 12px;
+    &_wolf {
+      max-width: 1000px;
+      right: -175px;
     }
-    &_title-big {
-      font-size: 110px;
+  }
+  @media (max-width: $break_md) {
+    &_content {
+      max-width: 350px;
     }
-
-    &_title-top {
-      font-size: 46px;
-    }
-    &_title-text-a {
-      font-size: 46px;
-    }
-    &_title-text-b {
-      font-size: 110px;
-    }
-    &_text {
-      font-size: 46px;
-    }
-    &_text-plus {
-      font-size: 54px;
-    }
-    &_btn {
-      padding: 13px 23px;
-      font-size: 46px;
+    &_wolf {
+      max-width: 900px;
+      right: -250px;
     }
   }
   @media (max-width: $break_sm) {
@@ -109,19 +51,15 @@
       justify-content: center;
     }
     &_content {
-      margin-bottom: 300px;
+      max-width: none;
+      margin-bottom: 124%;
+      margin-left: 0;
+      padding-top: 47px;
     }
-    &_title {
-      margin-bottom: 0;
-    }
-    &_text {
-      font-size: 39px;
-    }
-    &_text-plus {
-      font-size: 46px;
-    }
-    &_btn {
-      display: block;
+    &_wolf {
+      right: -15px;
+      left: -15px;
+      bottom: 0;
     }
   }
   @media (max-width: $break_xs) {
