@@ -327,6 +327,10 @@ body {
 		background-color: #000;
 	}
 }
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
 .welcome {
 	padding-top: 140px;
 	position: relative;
@@ -497,10 +501,10 @@ body {
 		margin-top: -25px;
 	}
 	.steps_title {
-		font-size: 41px;
+		display: 35px;
 	}
 	.steps_text {
-		font-size: 25px;
+		font-size: 20px;
 	}
 }
 @media (max-width: 500px) {
@@ -518,7 +522,7 @@ body {
 		font-size: 20px;
 	}
 	.steps_text {
-		font-size: 16px;
+		font-size: 12px;
 	}
 }
 
